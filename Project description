@@ -1,0 +1,58 @@
+Weather Scraping Tool with Python
+
+Group Number: 
+Member of the Group: Chiara Georgiadis (17-607-136), David Matern(), Nicolas Hebeisen (17-605-643), Thomas ()
+
+
+** About**
+This project is part of the Advanced Programming course, conducted at the University of St. Gallen.
+The goal of the project was to create a weather scraping tool using the predefined website SRF METEO. 
+It needs to be noted that the language of the website is German and can't be changed to english.
+To avoid ambiguity, we refer to the translations paragraph, where keywords of the project are translated.
+
+The project was inspired by the following tutorial:
+
+** Motivation **
+Why data scraping?
+
+** Pre-requisites **
+The project works with Python3
+In order to run the program, the following libraries need to be installed:
+BeeautifulSoup, requests
+
+** Instructions **
+1. Start Code
+2. Enter the location of your choosing
+3. Receive weather forecast of the following 6 days
+
+
+** Translation of keywords/sentences **
+-Input-
+Von welchem Standort möchten Sie das Wetter wissen?: From which location would you like to know the weather?
+Mögliche Standorte: Possible Locations
+
+-Output-
+Heute : today
+Morgen : tomorrow
+Übermorgen : day after tomorrow
+Montag: monday
+Dienstag: tuesday
+Mittwoch: wednesday
+Donnerstag: thursday
+Freitag: friday
+Samstag: saturday
+Sonntag: sunday
+
+Temperatur: temperature
+Tag: day
+Nacht : night
+Grad: degree
+Regenmenge: rainfall
+
+** Sources **
+
+
+
+
+
+
