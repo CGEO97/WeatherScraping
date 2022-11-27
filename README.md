@@ -1,7 +1,11 @@
 # WeatherScraping Tool with Python
 
 Members of the Group: 
-Chiara Georgiadis (17-607-136), David Matern (21-603-899), Nicolas Hebeisen (17-605-643), Thomas Forrer (16-608-226)
+
+	Chiara Georgiadis (17-607-136)
+	David Matern (21-603-899)
+	Nicolas Hebeisen (17-605-643)
+	Thomas Forrer (16-608-226)
 
 About
 
