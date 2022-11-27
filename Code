@@ -1,0 +1,83 @@
+#The following libaries are required to run the code
+from bs4 import BeautifulSoup
+import requests
+
+#The following code imports specified writing styles
+class color:
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
+
+#The following code allows the user to choose one of five different locations, which we defined
+y = input("Von welchem Ort möchten Sie das Wetter wissen? Mögliche Standorte: St. Gallen, Zürich, Frauenfeld, Genf, Gerra Gambarogno. ")
+
+#The following code allows us to match the user with his choosen location
+if y == "St. Gallen":
+
+#The following code downloads the page we need to run the code
+    page = requests.get(
+        "https://www.srf.ch/meteo/wetter/St.+Gallen/47.4233,9.3774")
+  
+#The following code allows us to convert the page to the html version
+    page.content
+    soup = BeautifulSoup(page.content, 'html.parser')
+elif y == "Zürich":
+    page = requests.get(
+        "https://www.srf.ch/meteo/wetter/Z%C3%BCrich/47.3797,8.5342?geolocationNameId=4cdc93de6ddc36141f7493213eeedaee")
+    page.content
+    soup = BeautifulSoup(page.content, 'html.parser')
+elif y == "Frauenfeld":
+    page = requests.get(
+        "https://www.srf.ch/meteo/wetter/Frauenfeld/47.5580,8.8965?geolocationNameId=4ca74936b2177e92ee45901e9ef082fa")
+    page.content
+    soup = BeautifulSoup(page.content, 'html.parser')
+elif y == "Genf":
+    page = requests.get(
+        "https://www.srf.ch/meteo/wetter/Genf/46.2100,6.1432?geolocationNameId=92f20256283d0c63e02576cd8ca42e3f")
+    page.content
+    soup = BeautifulSoup(page.content, 'html.parser')
+elif y == "Gerra Gambarogno":
+    page = requests.get(
+        "https://www.srf.ch/meteo/wetter/Gerra-(Gambarogno)/46.1231,8.7832?geolocationNameId=8a47355b92d34a2e3eb0ec2e012c7dc2")
+    page.content
+    soup = BeautifulSoup(page.content, 'html.parser')
+else:
+    print("Ihre Eingabe war unkorrekt")
+
+#The following code searches the part of the html document we specified within the class attribute
+findSoup = soup.find(
+    class_="weather-week js-weather-week weather-week--expanded")
+
+#The following code searches all lists within our predefined section of the html document
+a = findSoup.find_all("li")
+
+print()
+#The following code goes through the list in respective order
+for x in a:
+
+#The following code allows us to get the name of the day in text style, which we split again into another list
+    Titel = (((x.find(class_="weather-day")).get_text()).split())
+  
+#The following code allows us to seperate the list by their length. It is needed, because the different days of the week are written differently. While today is a single word, all following days of the week have two versions of their name; therefore we need to get the right word out of them. We do this by an if statement which considers the length of the list.
+    if len(Titel) > 1:
+
+#The following code allows us to print the desired index of the list "TITEL" in our desired textstyle
+        print(color.BOLD + color.UNDERLINE + Titel[1] + color.END)
+    else:
+        print(color.BOLD + color.UNDERLINE + Titel[0] + color.END)
+    print()
+
+#The following code searches the part of the html document we specified within the class attribute and get the text, which will be printed
+    print((x.find(class_="weather-day__tmp weather-day__tmp--hi")
+           ).find(class_="h-offscreen").get_text())
+    print((x.find(class_="weather-day__tmp weather-day__tmp--low")
+           ).find(class_="h-offscreen").get_text())
+
+#The following code allows us to split the text we got and include only the desired number
+    regenmenge = (
+        ((x.find(class_="weather-hours__amount")).get_text()).split("Regenmenge"))
+    regenWahr = (((x.find(class_="weather-hours__percent")
+                   ).get_text()).split("Regenwahrscheinlichkeit"))
+    print("Regenmenge " + str(regenmenge[1]) + " mm")
+    print("Regenwahrscheinlichkeit " + str(regenWahr[1]) + " %")
+    print()
