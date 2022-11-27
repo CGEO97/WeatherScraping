@@ -7,7 +7,7 @@ About
 
 	This project is part of the Advanced Programming course, conducted at the University of St. Gallen.
 	The goal of the project was to create a weather scraping tool using the predefined website SRF METEO
-	It needs to be noted that the language of the website is German and can't be changed to English. --> Anpassen Out in German
+	It needs to be noted that our code output is German since the language of the website is German.
 	To avoid ambiguity, we refer to the translations paragraph, where keywords of the project are translated.
 	The project was inspired by the following tutorial: https://www.dataquest.io/blog/web-scraping-tutorial-python/ 
 
@@ -35,27 +35,25 @@ Instructions
 
 Translation of keywords/sentences
 
-- Von welchem Standort möchten Sie das Wetter wissen?: From which location would you like to know the weather?
-- Mögliche Standorte: Possible Locations
-
-- Heute : today
-- Morgen : tomorrow
-- Übermorgen : day after tomorrow
-- Montag: monday
-- Dienstag: tuesday
-- Mittwoch: wednesday
-- Donnerstag: thursday
-- Freitag: friday
-- Samstag: saturday
-- Sonntag: sunday
-- Temperatur: temperature
-- Tag: day
-- Nacht : night
-- Regenmenge: rainfall
-- Regenmengenwahrscheinlichkeit : rain probability
-
+	- Von welchem Standort möchten Sie das Wetter wissen?: From which location would you like to know the weather?
+	- Mögliche Standorte: Possible Locations
+	- Heute : today
+	- Morgen : tomorrow
+	- Übermorgen : day after tomorrow
+	- Montag: monday
+	- Dienstag: tuesday
+	- Mittwoch: wednesday
+	- Donnerstag: thursday
+	- Freitag: friday
+	- Samstag: saturday
+	- Sonntag: sunday
+	- Temperatur: temperature
+	- Tag: day
+	- Nacht : night
+	- Regenmenge: rainfall
+	- Regenmengenwahrscheinlichkeit : rain probability
 
 Sources
 
-- Tutorial: https://www.dataquest.io/blog/web-scraping-tutorial-python/
-- Weather Website: https://www.srf.ch/meteo
+	Tutorial: https://www.dataquest.io/blog/web-scraping-tutorial-python/
+	Weather Website: https://www.srf.ch/meteo
