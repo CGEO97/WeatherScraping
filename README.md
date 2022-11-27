@@ -5,7 +5,7 @@ Group Number:
 Members of the Group: 
 Chiara Georgiadis (17-607-136), David Matern(), Nicolas Hebeisen (17-605-643), Thomas ()
 
-About
+#About
 
 This project is part of the Advanced Programming course, conducted at the University of St. Gallen.
 The goal of the project was to create a weather scraping tool using the predefined website SRF METEO
