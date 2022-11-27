@@ -1,13 +1,13 @@
 # WeatherScraping Tool with Python
 
 Members of the Group: 
-Chiara Georgiadis (17-607-136), David Matern(), Nicolas Hebeisen (17-605-643), Thomas ()
+Chiara Georgiadis (17-607-136), David Matern (21-603-899), Nicolas Hebeisen (17-605-643), Thomas Forrer (16-608-226)
 
 About
 
 	This project is part of the Advanced Programming course, conducted at the University of St. Gallen.
 	The goal of the project was to create a weather scraping tool using the predefined website SRF METEO
-	It needs to be noted that the language of the website is German and can't be changed to English.
+	It needs to be noted that the language of the website is German and can't be changed to English. --> Anpassen Out in German
 	To avoid ambiguity, we refer to the translations paragraph, where keywords of the project are translated.
 	The project was inspired by the following tutorial: https://www.dataquest.io/blog/web-scraping-tutorial-python/ 
 
@@ -48,7 +48,7 @@ Translation of keywords/sentences
 - Freitag: friday
 - Samstag: saturday
 - Sonntag: sunday
-- Temperatur: temperatur
+- Temperatur: temperature
 - Tag: day
 - Nacht : night
 - Regenmenge: rainfall
