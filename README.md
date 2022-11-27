@@ -6,8 +6,8 @@ Chiara Georgiadis (17-607-136), David Matern (21-603-899), Nicolas Hebeisen (17-
 About
 
 	This project is part of the Advanced Programming course, conducted at the University of St. Gallen.
-	The goal of the project was to create a weather scraping tool using the predefined website SRF METEO
-	It needs to be noted that our code output is German since the language of the website is German.
+	The goal of the project was to create a weather scraping tool using the predefined website SRF METEO.
+	It needs to be noted that our code output is in German since the language of the website is German.
 	To avoid ambiguity, we refer to the translations paragraph, where keywords of the project are translated.
 	The project was inspired by the following tutorial: https://www.dataquest.io/blog/web-scraping-tutorial-python/ 
 
@@ -22,7 +22,7 @@ Motivation
 
 Pre-requisites
 
-	The project works with Python3
+	The project works with Python3.
 	In order to run the program, the following libraries need to be installed:
 	BeeautifulSoup, requests
 
@@ -36,7 +36,7 @@ Instructions
 Translation of keywords/sentences
 
 	- Von welchem Standort möchten Sie das Wetter wissen?: From which location would you like to know the weather?
-	- Mögliche Standorte: Possible Locations
+	- Mögliche Standorte: Possible locations
 	- Heute : today
 	- Morgen : tomorrow
 	- Übermorgen : day after tomorrow
@@ -50,8 +50,8 @@ Translation of keywords/sentences
 	- Temperatur: temperature
 	- Tag: day
 	- Nacht : night
-	- Regenmenge: rainfall
-	- Regenmengenwahrscheinlichkeit : rain probability
+	- Regenmenge: rainfall amount
+	- Regenmengenwahrscheinlichkeit : rainfall probability
 
 Sources
 
